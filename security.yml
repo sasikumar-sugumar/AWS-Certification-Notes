@@ -1,0 +1,69 @@
+Security :
+  AWS Directory Services :
+    AD Connector :
+      - Existing AD infrastructure to AWS Cloud
+      - Existing security policies can be enforced
+      - MFA supported
+    Simple AD :
+      - MFA Not supported.
+      - Cannot add additional AD servers
+      - No Trust Relationships
+      - Cannot Transfer FSMO Roles
+  Security Token Service :
+    Federation(Active Directory) :
+      - Using SAML
+      - Federation with Mobile Apps
+      - Cross Account Access
+    Federation :
+      - Combining or joning list of users in one domain (such as IAM) with a list of users in another domain
+       (such as Active Directory, Facebook etc.)
+    Identity Broker :
+      - A Service that allows you to take a identity from point A and join it (federate it) to point B.
+    Identity Store :
+      - Services like Active Directory, Facebook, Google etc.
+    Identities :
+      - A user of a service like Facebook etc.
+    Response from STS :
+      - These four responses are returned after validating a user.
+         - Access Key 
+         - Secret Access Key
+         - Token
+         - Duration (1-36 hrs)
+  Monitoring in the Cloud :
+    CloudTrail :
+      - Auditing and Collecting history of API calls.
+    Cloudwatch :
+      - Monitoring service for AWS cloud resources.
+      - log data stored indfinitely
+      - Alarm history is stored for 14 days.
+      - Cloudwatch can be used to monitor Cloudtrail
+      - Supports cross account subscription
+    Monitoring :
+      - Monitor and ship events to 
+        - Cloudwatch
+        - A Centralized logging system
+        - S3
+      - Avoid storing logs anywhere not persistent
+  Cloud HSM (Hardware Security Module) :
+      - Single Tenanted (1 physical device)
+      - Must be used withing a VPC
+      - VPC Perring is supported
+      - Not fault tolerance, you need to build a cluster for fault tolerance, so you will need 2
+      - Can integrate with RDS and Redshift
+      - Monitored via syslog
+  DDoS (Distributed Deniel of Service) :
+    Amplification :
+      - 
+  IDS and IPS :
+    IDS :
+      - Intrusion detection system
+    IPS : 
+      - Intrusion prevention system
+    SOC :
+      - Security operation center
+  Summary :
+    
+
+    
+
+

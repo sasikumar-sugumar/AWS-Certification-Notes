@@ -1,0 +1,24 @@
+VMware vCenterplug-in :
+    - Migrate VMware VMs to Amazon EC2
+    - Reach new geographies from vCenter
+    - Self-Service AWS Portal within vCenter
+    - Leverage vCenter Experience while getting started with AWS.
+Storage Gateway Migration :
+    - Storage Gateway can be used to migrate your existing VM's to AWS
+    - Consistent Snapshot is key (pull the VM offline to do this).
+CIDR Reservations :
+    - Largest Block : /16
+    - Smallest Block : /28
+    - Five Address is Reserved (First Four and the last IP address are reserved) :
+      -10.0.0.0: Network Address
+      -10.0.0.1: Reserved by AWS for VPC router
+      -10.0.0.2: Reserved by AWS for mapping to the Amazon-provided DNS.
+      -10.0.0.3: Reserved by AWS for future use.
+      -10.0.0.255: Network broadcast address.
+    - Direct Connect :
+      - configure BGP so that VPN has a higher cost than Direct Connections
+Data Pipeline :
+    - Data Node (Destination)
+    - Activity (JOB)
+    - Pre-Condition (Readiness Check)
+    - Schedule ()

@@ -1,0 +1,73 @@
+Scalability-and-Elasiticity :
+    CloudFront :
+        Distribution Types :
+          - Web
+          - RTMP 
+        Geo Restrictions :
+          - whitelist
+          - blacklist
+        HTTP Methods : 
+            SUPPORTED : 
+              - GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
+            Cached-Request :
+              - GET,HEAD, OPTIONS
+            NOT-CACHED-REQUESTS :
+              - POST,PUT,PATCH,DELETE
+        SSL :
+          - HTTP OR HTTPS
+          - DEDICATED IP :
+            - $600/month can get expensive
+          - SNI Custom SSL :
+            - does not work with older browsers
+        CNAMES : SUPPORTED
+        INVALIDATION REQUESTS : 
+          - invalidation API - used to remove offensive content
+        ZONE APEX SUPPORT :
+          - route53
+        Dynamic Content : SUPPORTED
+    ElasticCache :
+        MemCached :
+            - Simple to offload DB
+            - Horizontal Scaling
+            - Multi-Threaded
+            - Can shard data across multiple nodes
+        Redis :
+            - Simple to offload DB
+            - Advanced data types
+            - Ranking/Sorting datasets
+            - Pub/Sub capabilities
+            - Persistence
+            - Multi-AZ
+            - Backup & Restore Capabilities
+    Kinesis Streams ("enables to build application to analyze streaming data"  : 
+        Components :
+            - Data Producers
+            - Shards
+            - Records :
+                - Sequence Number
+                - Partition Key
+                - Data (Blob)
+            - Data Consumers (kinesis streams applications)
+        Data Producers :
+            - EC2 Machine
+        Shard (units of measurement of data) : 
+            - 1MB/sec data input and 2MB/sec data output
+            - 1000 put records per second
+        Partition Key :
+            - Tells you which shard the data belongs to
+            - Specified by application putting data
+        Sequence Number :
+            - unique sequence for data
+        Data Blobs :
+            - Actiual Data
+        Timeline :
+            - Data is stored for 24 hours by default within streams can be increased to 7 days
+    SNS Mobile Push :
+        
+
+
+        
+
+
+
+        

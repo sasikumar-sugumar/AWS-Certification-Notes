@@ -1,0 +1,23 @@
+CloutFormation:
+    Stack :
+      The end result of template
+    Template :
+      The Architectural diagram
+    Mandatory Elements :
+      AWS Resources 
+    Chef and Puppet Integration :
+      Application layer configuration supported
+      Bootstrap scripts supported
+    Error :
+      By default automatic rollback on error is enabled
+    Deletion policies :
+      Supports deletion policies
+      You can specify s
+Elastic Beanstalk :
+    can provision RDS
+    supports IAM
+    supports VPC
+    full access to resurces
+    multiple environment supoorted
+    only the changes are replicated
+    

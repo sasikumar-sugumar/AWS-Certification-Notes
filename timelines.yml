@@ -1,0 +1,8 @@
+TIMELINES :
+  KINESIS :
+    -  Data is stored for 24 hours by default within streams can be increased to 7 days
+  STS :
+    - 1-36 hrs the duration of time user can be looged into the system using session created by STS
+  Cloudwatch :
+    - Cloudwatch logs are stored indefinitely.
+    - Cloudwatch Alarm history is stored for 14 days.

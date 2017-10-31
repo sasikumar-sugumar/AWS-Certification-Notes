@@ -1,0 +1,49 @@
+Data Storage :
+    Optimizing S3 :
+        Optimizing for Puts :
+           Parallelizing For Puts :
+        Optimizing for Gets :
+           Parallelizing for Gets :
+        Lexicographical :
+           - Add randomness to object name to maximize perforamnces
+    S3 Best Practices :
+        Versioning :
+          - File protection
+          - No performance bootleneck
+          - Reterieve deleted version
+          - Easy rollback to previous versions
+          - Once switched on it cannot be switched off, it can be suspended
+        Secure S3 :
+          - Bucket policies
+          - MFA Delete
+          - Use another AWS 
+    Database Design Pattern :
+        Multi-AZ :
+          - DR only
+          - Synchronous replication
+        Read Replicas :
+          - Scale out
+          - Asynchronous replication
+        RDS Use Case :
+          - MySql, Oracle, SQL, PostgreSQL, MariaDB and Aurora
+          - ACID Transaction
+          - Anti Pattern :
+              - Index and Query based data
+              - Numerous Blobs
+              - Automated scalability
+              - Complete control
+              - Other than MySql, Oracle, SQL, PostgreSQL, MariaDB and Aurora e.g IBM Db2, Informix or sysbase
+        Amazon DynamoDB :
+          - Automatic scalability
+          - Index and Query focussed data
+          - Anti Pattern :
+              - Pre-written application to relation database
+              - Joins and/or complex transactions
+              - Blob Data
+              - Large data with low I/O rate
+
+
+
+      
+
+          
